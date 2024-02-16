@@ -24,6 +24,14 @@ const CartButton = () => {
   );
 };
 
+const 샛별배송 = () => {
+  return <span className="text-l-sm text-gray-400">샛별배송</span>;
+};
+
+const 타이틀 = () => {
+  return <p className="text-p-base text-content">[KF365] 간편한 국산 손질 오징어 1kg</p>;
+};
+
 const ProductBox = () => {
   return (
     <div className="w-productBox-width h-productBox-height list_div-productBox">
@@ -31,8 +39,8 @@ const ProductBox = () => {
         <div className="relative">
           <ProductImg />
           <div className="info flex flex-col gap-2">
-            <span className="text-l-sm text-gray-400">샛별배송</span>
-            <p className="text-p-base text-content">[KF365] 간편한 국산 손질 오징어 1kg</p>
+            <샛별배송 />
+            <타이틀 />
             <div className="flex gap-2">
               <p className="text-l-lg text-accent-yellow">
                 2<span>%</span>
@@ -49,10 +57,10 @@ const ProductBox = () => {
               <span className="rounded bg-gray-100 p-1 text-l-sm text-content">한정수량</span>
             </div>
           </div>
+          <CartButton />
         </div>
       </a>
     </div>
   );
 };
-
 export default ProductBox;
